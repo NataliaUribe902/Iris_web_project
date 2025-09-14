@@ -11,6 +11,19 @@ body {
   justify-content: center;
   gap: 30px;
 }
+a {
+  text-decoration: none;
+  color: #d6d6d6;
+}
+
+a:hover {
+  color: grey;
+}
+
+a:visited {
+  color: pink;
+}
+
 .presentation {
   display: flex;
   justify-content: space-around;
