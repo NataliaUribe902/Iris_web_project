@@ -1,0 +1,146 @@
+body {
+  background-color: #000000;
+  color: #d6d6d6;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.menu {
+  font-size: 25px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.presentation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+.header_image {
+  height: 800px;
+}
+.header__title {
+  font-size: 40px;
+  text-align: center;
+}
+.header__text {
+  max-width: 400px;
+}
+.section1 {
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+}
+.section1__image {
+  height: 600px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+.section1__text {
+  max-width: 400px;
+}
+.galleria__title {
+  text-align: center;
+  padding: 60px;
+}
+.galeria__fotos-img {
+  width: 100%;
+}
+.galeria__fotos {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 10px;
+}
+
+.footer {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+}
+.footer__image {
+  height: 400px;
+}
+.footer__text1 {
+  font-size: 40px;
+  text-align: center;
+}
+.imagen {
+  padding: 10px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .header_image {
+    height: 500px;
+  }
+  .section1 {
+    gap: 30px;
+  }
+  .section1__text {
+    font-size: 18px;
+  }
+  .galeria__fotos {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .presentation {
+    gap: 20px;
+  }
+  .header_image {
+    height: 350px;
+  }
+  .header__title {
+    font-size: 20px;
+  }
+  .header__text {
+    font-size: 20px;
+    min-width: 200px;
+  }
+  .section1 {
+    gap: 15px;
+  }
+  .section1__image {
+    height: 350px;
+  }
+  .section1__text {
+    min-width: 300px;
+  }
+  .galeria__fotos {
+    padding-left: 40px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footer__image {
+    height: 200px;
+  }
+  .footer__text {
+    padding: 30px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .presentation {
+    flex-direction: column;
+  }
+  .header_image {
+    height: 400px;
+  }
+  .section1 {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .galeria__fotos {
+    padding-left: 40px;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(15, auto);
+  }
+}
